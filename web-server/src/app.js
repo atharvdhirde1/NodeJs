@@ -1,20 +1,20 @@
+const path = require('path')
 const express = require('express')
+
+// console.log(__dirname) // tells the folder name
+// console.log(__filename) // tells the file name
 const app= express()
+const publicDirectoryPath= path.join(__dirname, '../public')
 
-app.get('',(req,res)=>{
-    res.send('Hello Express!')
-})
+app.use(express.static(publicDirectoryPath))
 
-app.get('/help',(req,res)=>{
-    res.send('Help page')
-})
 
-app.get('/about',(req,res)=>{
-    res.send('About page')
-})
 
 app.get('/weather',(req,res)=>{
-    res.send('weather page')
+    res.send({
+        'forecast':'It is sunny',
+        'location':'India'
+        })
 })
 
 app.listen(3000,()=>{
