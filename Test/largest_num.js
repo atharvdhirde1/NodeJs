@@ -5,7 +5,10 @@ function largest(a,b){
     }else{
         console.log(b +" is largest")
     }
+    // return Math.max(a,b);
 }
+ 
+
 
 const num1=9;
 const num2=6;
