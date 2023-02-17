@@ -1,6 +1,13 @@
 // Write a function that takes an array of numbers and returns a new array with only 
 //the even numbers from the original array.
 
+// function convertToUppercase(array) {
+//     let result = [];
+//     for (let i = 0; i < array.length; i++) {
+//       result.push(array[i].toUpperCase());
+//     }
+//     return result;
+//   }
 
 function evenArray(array1){
     let result=[];
