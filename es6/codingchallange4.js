@@ -12,7 +12,7 @@
 // Test data:
 // § Data 1: Test for bill values 275, 40 and 430
 
-let bill = 275;
+let bill = 355;
 let tip;
 tip = (bill<=300 && bill>=50) ? (tip = bill*(15/100)):(tip = bill*(20/100))
 let total = bill+tip
